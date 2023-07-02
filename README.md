@@ -31,14 +31,14 @@ f(2)), (3, f(3)), …, (N, f(N)). When any three out of the N friends present th
 The two main options are split() and join() which are implemented by the corresponding 
 functions.
 -Split: The secret number to be distributed is read from the command line.
-        ```bash
+        ``` bash
         ./secret_sharing split 1050
         ```
       Each friend gets a pair of values. These values are written to output.txt
 -Join: The secret number is reconstructed from N pairs of values, where N is the minimum
      number of friends needed.
      e.g for 3 friends needed: 
-     ```bash
+     ``` bash
      ./secret_sharing join 1 f(1) 2 f(2) 3 f(3)
      ```
     
